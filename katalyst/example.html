@@ -4,11 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>example</title>
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen,projection" charset="utf-8" />
-    <!-- <link rel="stylesheet" href="stylesheets/example-screen.css" type="text/css" media="screen,projection" charset="utf-8" /> -->
     <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" charset="utf-8" />
-    <!-- <link rel="stylesheet" href="stylesheets/example-print.css" type="text/css" media="print" charset="utf-8" /> -->
     <!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen,projection" charset="utf-8" /><![endif]-->
-    <!-- <!- -[if lt IE 8]><link rel="stylesheet" href="stylesheets/example-ie.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+    <link rel="stylesheet" href="stylesheets/example-screen.css" type="text/css" media="screen,projection" charset="utf-8" />
   </head>
   <body>
     <div class="container showgrid"><!-- showgrid -->
@@ -26,7 +24,7 @@
       </div>
       
       <div class="top-2 span-24 last-span">
-        <div class="span-18 no-gutter" style="background:gray;">
+        <div class="smooth-bl smooth-tl span-18 no-gutter" style="background:gray;">
           banner<br />
           <br />
           <br />
@@ -41,26 +39,45 @@
           <br />
           <br />
           <br />
-          <br />
-          <br />
         </div>
-        <div class="steal-gutter span-6 last-span" style="background:red;">
-          form<br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div class="members-side-panel smooth-br smooth-tr steal-gutter span-6 last-span">
+          <div class="members-side-box">
+            <h3>CMI Members</h3>
+            <p>Become a CMMI Member and enjoy the benefits such as saved search and new car email notifications.</p>
+            <form class="formtastic">
+              <fieldset class="buttons">
+                <ol>
+                  <li>
+                    <input type="submit" />
+                  </li>
+                </ol>
+              </fieldset>
+            </form>
+            <h3>Login</h3>
+            <form class="formtastic">
+              <fieldset class="inputs">
+                <legend><span></span></legend>
+                <ol>
+                  <li class="string">
+                    <label>Username:</label>
+                    <input type="text" />
+                  </li>
+                  <li class="string">
+                    <label>Password:</label>
+                    <input type="text" />
+                    <p class="inline-hints">Forgotten your password?</p>
+                  </li>
+                </ol>
+              </fieldset>
+              <fieldset class="buttons">
+                <ol>
+                  <li>
+                    <input type="submit" />
+                  </li>
+                </ol>
+              </fieldset>
+            </form>
+          </div>
         </div>
       </div>
       
