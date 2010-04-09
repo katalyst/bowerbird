@@ -59,17 +59,31 @@ th, td, caption {padding:4px 10px 4px 5px;}
 tfoot {font-style:italic;}
 caption {background:#eee;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin:0 0 19px;border:none;}
-hr.space {background:#fff;color:#fff;visibility:hidden;}
 
 /* forms */
-/*form ol, form ul, form li, form input, form textarea, form select, form p { margin:0; padding:0; }
-form em, form strong { font-style:normal; font-weight:normal; }
-form ol, form ul { list-style:none; }
-form abbr, form acronym { font-variant:normal; }
-form input, form textarea, form select { font-family:inherit; font-size:inherit; font-weight:inherit; }
-form input, form textarea, form select { font-size:100%; }*/
+form ol, form ul, form li, form input, form textarea, form select, form p {margin:0;padding:0;}
+form em, form strong {font-style:normal; font-weight:normal;}
+form ol, form ul {list-style:none;}
+form abbr, form acronym {font-variant:normal;}
+form input, form textarea, form select {font-family:inherit; font-size:inherit; font-weight:inherit;}
+form input, form textarea, form select {font-size:100%;}
+form fieldset ol li {margin-bottom:20px;}
+form fieldset ol li label {display:block;width:25%;float:left;}
+form fieldset ol li li label {line-height:100%;padding-top:0;}
+form fieldset ol li li label input {line-height:100%;vertical-align:middle;margin-top:-0.1em;}
+form fieldset ol li fieldset {position:relative;}
+form fieldset ol li fieldset legend {position:absolute;width:25%;padding-top:0;}
+form fieldset ol li fieldset legend span {position:absolute;}
+form fieldset ol li fieldset legend.label label {position:absolute;} /* SMELL: This should be sd. */
+form fieldset ol li fieldset ol {float:left;width:74%;margin:0;padding:0 0 0 25%;}
+form fieldset ol li fieldset ol li {padding:0;border:0;}
+/* clearfixing */
+form fieldset, form fieldset ol li {display:inline-block;}
+form fieldset:after, form fieldset ol li:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+html[xmlns] form fieldset, html[xmlns] form fieldset ol li {display:block;}
+* html form fieldset, * html form fieldset ol li {height:1%;}
 
-/* grid.css */
+/* grid */
 .container {display:block;width:950px;margin:0 auto;}
 .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .showgrid {background:url(grid.png);}
@@ -236,6 +250,28 @@ form input, form textarea, form select { font-size:100%; }*/
 
 .box {padding:20px 20px 0 20px;}
 
-/*.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+/* utils */
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
-.clear {clear:both;}*/
+.clear {clear:both;}
+
+/* formtastic classes */
+/* SMELL: These class names aren't specific enough. */
+.buttons {padding-left:25%;}
+.buttons li {float:left;padding-right:0.5em;}
+.inline-errors, .inline-hints {margin:10px 0 0 25%;} /* SMELL: inline-hints and inline-errors should just be 'inline-message error' and 'inline-message hint'. */
+.errors {margin:0.5em 0 0 25%; list-style:square;}
+.errors li {padding:0; border:none; display:list-item;}
+.string input, .password input, .numeric input, .text textarea {width:73%;}
+.boolean label {padding-left:25%;width:auto;}
+.boolean label input {margin:0 5px 0 2px;}
+.check_boxes fieldset ol li, .radio fieldset ol li {margin:0 0 10px 0;}
+.check_boxes fieldset ol li label, .radio fieldset ol li label {float:none;width:100%;}
+.check_boxes fieldset ol li label input, .radio fieldset ol li label input {margin-right:2px;}
+/*
+.date fieldset ol li, .time fieldset ol li, .datetime fieldset ol li {float:left;width:auto;margin:0 .3em 0 0;}
+.date fieldset ol li label, .time fieldset ol li label, .datetime fieldset ol li label {display:none;}
+.date fieldset ol li label input, .time fieldset ol li label input, .datetime fieldset ol li label input {display:inline;margin:0;padding:0;}
+*/
+.hidden {display:none;}

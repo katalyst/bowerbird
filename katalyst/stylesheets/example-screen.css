@@ -21,21 +21,25 @@ h3, .h3
 .smooth-bl
 {
   -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
 }
 
 .smooth-br
 {
   -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
 }
 
 .smooth-tl
 {
   -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
 }
 
 .smooth-tr
 {
   -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
 }
 
 .members-side-panel
