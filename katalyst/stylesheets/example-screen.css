@@ -1,3 +1,23 @@
+h1, .h1,
+h2, .h2,
+h3, .h3
+{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.alt
+{
+  color: #fff;
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.short-input
+{
+  margin-bottom: 5px;
+}
+
 .smooth-bl
 {
   -webkit-border-bottom-left-radius: 10px;
@@ -26,5 +46,5 @@
 
 .members-side-box
 {
-  padding: 20px 20px 20px 10px;
+  padding: 20px 20px 0 10px;
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen,projection" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" charset="utf-8" />
     <!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen,projection" charset="utf-8" /><![endif]-->
+    <link rel="stylesheet" href="stylesheets/formtastic.css" type="text/css" media="screen,projection" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/example-screen.css" type="text/css" media="screen,projection" charset="utf-8" />
   </head>
   <body>
@@ -43,11 +44,11 @@
         <div class="members-side-panel smooth-br smooth-tr steal-gutter span-6 last-span">
           <div class="members-side-box">
             <h3>CMI Members</h3>
-            <p>Become a CMMI Member and enjoy the benefits such as saved search and new car email notifications.</p>
+            <p class="alt">Become a CMI Member and enjoy the benefits such as saved search and new car email notifications.</p>
             <form class="formtastic">
               <fieldset class="buttons">
                 <ol>
-                  <li>
+                  <li class="short-input">
                     <input type="submit" />
                   </li>
                 </ol>
@@ -58,14 +59,14 @@
               <fieldset class="inputs">
                 <legend><span></span></legend>
                 <ol>
-                  <li class="string">
-                    <label>Username:</label>
+                  <li class="short-input string">
+                    <label class="alt">Username:</label>
                     <input type="text" />
                   </li>
-                  <li class="string">
-                    <label>Password:</label>
+                  <li class="short-input string">
+                    <label class="alt">Password:</label>
                     <input type="text" />
-                    <p class="inline-hints">Forgotten your password?</p>
+                    <p class="alt inline-hints">Forgotten your password?</p>
                   </li>
                 </ol>
               </fieldset>
@@ -96,23 +97,41 @@
           <br />
           <br />
         </div>
-        <div class="top-2 span-18 pad-bottom-1 last-span" style="background:gray;">
-          tvc<br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+        <div class="smooth-tl smooth-tr smooth-bl smooth-br top-2 span-18 pad-bottom-1 last-span" style="background:gray;">
+          <div class="box">
+            <h2>Formtastic Form</h2>
+            <!-- formtastic start -->
+            <form action="/posts" class="formtastic article" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="u1b9XSbiq0oYQOuQoF4K1zrIRpXMW6qUg0qfL/mHNvE=" /></div>
+
+              <fieldset class="inputs"><legend><span>Basic</span></legend><ol>
+                <li class="string required" id="article_title_input"><label for="article_title">Title<abbr title="required">*</abbr></label><input id="article_title" name="article[title]" size="50" type="text" /></li>
+                <li class="string required" id="article_body_input"><label for="article_body">Body<abbr title="required">*</abbr></label><input id="article_body" name="article[body]" size="50" type="text" /></li>
+                <li class="string required" id="article_section_input"><label for="article_section">Section<abbr title="required">*</abbr></label><input id="article_section" name="article[section]" size="50" type="text" /></li>
+                <li class="radio required" id="article_publication_state_input"><fieldset><legend class="label"><label for="article_publication_state_true">Publication state<abbr title="required">*</abbr></label></legend><ol><li class="publication_state_true"><label for="article_publication_state_true"><input id="article_publication_state_true" name="article[publication_state]" type="radio" value="true" /> Yes</label></li><li class="publication_state_false"><label for="article_publication_state_false"><input id="article_publication_state_false" name="article[publication_state]" type="radio" value="false" /> No</label></li></ol></fieldset></li>
+                <li class="string required" id="article_category_input"><label for="article_category">Category<abbr title="required">*</abbr></label><input id="article_category" name="article[category]" size="50" type="text" /></li>
+                <li class="string required" id="article_allow_comments_input"><label for="article_allow_comments">Allow commenting on this article<abbr title="required">*</abbr></label><input id="article_allow_comments" name="article[allow_comments]" size="50" type="text" /></li>
+              </ol></fieldset>
+
+              <fieldset class="inputs"><legend><span>Advanced</span></legend><ol>
+                <li class="string optional" id="article_keywords_input"><label for="article_keywords">Keywords</label><input id="article_keywords" name="article[keywords]" size="50" type="text" />
+            <p class="inline-hints">Example: ruby, rails, forms</p></li>
+                <li class="string optional" id="article_extract_input"><label for="article_extract">Extract</label><input id="article_extract" name="article[extract]" size="50" type="text" /></li>
+                <li class="string optional" id="article_description_input"><label for="article_description">Description</label><input id="article_description" name="article[description]" size="50" type="text" /></li>
+                <li class="boolean optional" id="article_url_title_input"><label for="article_url_title"><input name="article[url_title]" type="hidden" value="0" /><input id="article_url_title" name="article[url_title]" type="checkbox" value="1" />Url title</label></li>
+              </ol></fieldset>
+
+              <fieldset class="inputs"><legend><span>Author</span></legend><ol>
+                <li class="string required" id="article_author_first_name_input"><label for="article_author_first_name">First name<abbr title="required">*</abbr></label><input id="article_author_first_name" name="article[author][first_name]" size="50" type="text" /></li>
+                <li class="string required" id="article_author_last_name_input"><label for="article_author_last_name">Last name<abbr title="required">*</abbr></label><input id="article_author_last_name" name="article[author][last_name]" size="50" type="text" /></li>
+              </ol></fieldset>
+
+              <fieldset class="buttons"><ol>
+                <li class="commit"><input class="submit" id="article_submit" name="commit" type="submit" value="Submit" /></li>
+              </ol></fieldset>
+
+            </form>
+            <!-- formtastic end -->
+          </div>
         </div>
       </div>
       
@@ -155,7 +174,7 @@
         </div>
       </div>
       
-      <div class="top-2 span-24 bottom-2">
+      <div class="top-2 span-24 bottom-2" style="background:black;">
         <hr />
         <div class="span-4 border">
           CMI Toyota<br />
