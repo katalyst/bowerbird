@@ -83,6 +83,9 @@ form fieldset:after, form fieldset ol li:after {content:".";display:block;height
 html[xmlns] form fieldset, html[xmlns] form fieldset ol li {display:block;}
 * html form fieldset, * html form fieldset ol li {height:1%;}
 
+/* wrap util (alternative for clearfix) */
+.wrap {overflow:auto;width:100%;}
+
 /* grid */
 .container {display:block;width:950px;margin:0 auto;}
 .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
