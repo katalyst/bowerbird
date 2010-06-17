@@ -11,7 +11,7 @@
 
 ----------------------------------------------------------------------- */
 
-/* reset.css */
+/* RESET ********************************************************************************* RESET */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
 body {line-height:20px;}
 table {border-collapse:separate;border-spacing:0;}
@@ -20,8 +20,7 @@ table, td, th {vertical-align:middle;}
 blockquote:before, blockquote:after, q:before, q:after {content:"";}
 blockquote, q {quotes:"" "";}
 a img {border:none;}
-
-/* typography.css */
+/* ELEMENTS *************************************************************************** ELEMENTS */
 html {font-size:100.01%;}
 body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-weight:normal;}
@@ -46,48 +45,28 @@ del {color:#666;}
 pre {margin:20px 0;white-space:pre;}
 pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:20px;}
 li ul, li ol {margin:0;}
-ul, ol {margin:0 20px 20px 0;padding-left:3.333em;} /* SMELL: Should the padding bt 3.333em? */
+ul, ol {margin:0 20px 20px 0;padding-left:40px;}
 ul {list-style-type:disc;}
 ol {list-style-type:decimal;}
 dl {margin:0 0 20px 0;}
 dl dt {font-weight:bold;}
 dd {margin-left:20px;}
-table {margin-bottom:1.4em;width:100%;} /* SMELL: Why is the margin 1.4em? */
+table {margin-bottom:20px;width:100%;}
 th {font-weight:bold;}
-thead th {background:#c3d9ff;}
-th, td, caption {padding:4px 10px 4px 5px;}
+th, td, caption {padding:5px;}
 tfoot {font-style:italic;}
 caption {background:#eee;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margin:0 0 19px;border:none;}
-
-/*  /* forms */
-/*  form ol, form ul, form li, form input, form textarea, form select, form p {margin:0;padding:0;}
-/*  form em, form strong {font-style:normal; font-weight:normal;}
-/*  form ol, form ul {list-style:none;}
-/*  form abbr, form acronym {font-variant:normal;}
-/*  form input, form textarea, form select {font-family:inherit; font-size:inherit; font-weight:inherit;}
-/*  form input, form textarea, form select {font-size:100%;}
-/*  form fieldset ol li {margin-bottom:20px;}
-/*  form fieldset ol li label {display:block;width:25%;float:left;}
-/*  form fieldset ol li li label {line-height:100%;padding-top:0;}
-/*  form fieldset ol li li label input {line-height:100%;vertical-align:middle;margin-top:-0.1em;}
-/*  form fieldset ol li fieldset {position:relative;}
-/*  form fieldset ol li fieldset legend {position:absolute;width:25%;padding-top:0;}
-/*  form fieldset ol li fieldset legend span {position:absolute;}
-/*  form fieldset ol li fieldset legend.label label {position:absolute;} /* SMELL: This should be sd. */
-/*  form fieldset ol li fieldset ol {float:left;width:74%;margin:0;padding:0 0 0 25%;}
-/*  form fieldset ol li fieldset ol li {padding:0;border:0;}
-/*  /* clearfixing */
-/*  form fieldset, form fieldset ol li {display:inline-block;}
-/*  form fieldset:after, form fieldset ol li:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
-/*  html[xmlns] form fieldset, html[xmlns] form fieldset ol li {display:block;}
-/*  * html form fieldset, * html form fieldset ol li {height:1%;}
-/**/
-
+/* UTILS ********************************************************************************* UTILS */
+hr.space, hr.half-space {background:#fff;color:#fff;visibility:hidden;}
+hr.half-space { margin-bottom:9px;}
+.clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix {display:block;}
+.clear {clear:both;}
+.imgfix {display:block;}
 /* wrap util (alternative for clearfix) */
 .wrap {overflow:auto;width:100%;}
-
-/* grid */
+/* GRID *********************************************************************************** GRID */
 .container {display:block;width:950px;margin:0 auto;}
 .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .showgrid {background:url(grid.png);}
@@ -117,7 +96,7 @@ hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margi
 .span-22 {width:870px;}
 .span-23 {width:910px;}
 .span-24 {width:950px;margin-right:0;}
-
+/* append and prepend */
 .append-1 {padding-right:40px;}
 .append-2 {padding-right:80px;}
 .append-3 {padding-right:120px;}
@@ -164,13 +143,13 @@ hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margi
 .prepend-21 {padding-left:840px;}
 .prepend-22 {padding-left:880px;}
 .prepend-23 {padding-left:920px;}
-
-.border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
+/* col borders and splits */
+.col-border {padding-right:4px;margin-right:5px;border-right:1px solid #eee;}
 .append-col-border {padding-right:24px;margin-right:25px;border-right:1px solid #eee;}
 .prepend-col-border {padding-left:25px;margin-left:14px;border-left:1px solid #eee;}
 .append-split-col {padding-right:25px;margin-right:25px;}
 .prepend-split-col {padding-left:25px;margin-left:15px;}
-
+/* push and pull */
 .pull-1 {margin-left:-40px;}
 .pull-2 {margin-left:-80px;}
 .pull-3 {margin-left:-120px;}
@@ -196,7 +175,6 @@ hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margi
 .pull-23 {margin-left:-920px;}
 .pull-24 {margin-left:-960px;}
 .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float:left;position:relative;}
-
 .push-1 {margin:0 -40px 20px 40px;}
 .push-2 {margin:0 -80px 20px 80px;}
 .push-3 {margin:0 -120px 20px 120px;}
@@ -222,13 +200,17 @@ hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margi
 .push-23 {margin:0 -920px 20px 920px;}
 .push-24 {margin:0 -960px 20px 960px;}
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float:right;position:relative;}
-
+/* tops and bottoms */
+.top-0 {margin-top:0;}
+.top-half {margin-top:5px;}
 .top-1 {margin-top:10px;}
 .top-2 {margin-top:20px;}
 .top-3 {margin-top:30px;}
 .top-4 {margin-top:40px;}
 .top-5 {margin-top:50px;}
 .top-6 {margin-top:60px;}
+.bottom-0 {margin-bottom:0;}
+.bottom-half {margin-bottom:5px;}
 .bottom-1 {margin-bottom:10px;}
 .bottom-2 {margin-bottom:20px;}
 .bottom-3 {margin-bottom:30px;}
@@ -247,40 +229,14 @@ hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:1px;margi
 .pad-bottom-4 {padding-bottom:40px;}
 .pad-bottom-5 {padding-bottom:50px;}
 .pad-bottom-6 {padding-bottom:60px;}
-
+/* gutters */
 .no-gutter {margin-right:0;}
 .fill-gutter {padding-right:10px;margin-right:0;}
 .steal-gutter {padding-left:10px;}
-
+/* boxes */
+/* TODO: .box-l, .box-r, .box-sides, .box-t, .box-b ? */
+.tight-box {padding:10px 10px 0 10px;}
 .box {padding:20px 20px 0 20px;}
-
-/* utils */
-hr.space {background:#fff;color:#fff;visibility:hidden;}
-.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
-.clearfix, .container {display:block;}
-.clear {clear:both;}
-
-/*  /* formtastic classes */
-/*  /* SMELL: These class names aren't specific enough. */
-/*  .buttons {padding-left:25%;}
-/*  .buttons li {float:left;padding-right:0.5em;}
-/*  .inline-errors, .inline-hints {margin:10px 0 0 25%;} /* SMELL: inline-hints and inline-errors should just be 'inline-message error' and 'inline-message hint'. */
-/*  .errors {margin:0.5em 0 0 25%; list-style:square;}
-/*  .errors li {padding:0; border:none; display:list-item;}
-/*  .string input, .password input, .numeric input, .text textarea {width:73%;}
-/*  .boolean label {padding-left:25%;width:auto;}
-/*  .boolean label input {margin:0 5px 0 2px;}
-/*  .check_boxes fieldset ol li, .radio fieldset ol li {margin:0 0 10px 0;}
-/*  .check_boxes fieldset ol li label, .radio fieldset ol li label {float:none;width:100%;}
-/*  .check_boxes fieldset ol li label input, .radio fieldset ol li label input {margin-right:2px;}
-/*  /*
-/*  .date fieldset ol li, .time fieldset ol li, .datetime fieldset ol li {float:left;width:auto;margin:0 .3em 0 0;}
-/*  .date fieldset ol li label, .time fieldset ol li label, .datetime fieldset ol li label {display:none;}
-/*  .date fieldset ol li label input, .time fieldset ol li label input, .datetime fieldset ol li label input {display:inline;margin:0;padding:0;}
-/*  */
-/*  .hidden {display:none;}
-/**/
-
 /* .formtastic */
 /* Blueprint is labels above inputs by default. */
 .formtastic legend {font-size:14px;line-height:20px;padding-bottom:20px;}
