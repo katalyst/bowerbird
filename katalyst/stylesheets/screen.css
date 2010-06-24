@@ -32,8 +32,8 @@ h5, .h5 {font-size:12px;font-weight:bold;margin-bottom:20px;}
 h6, .h6 {font-size:1em;font-weight:bold;} /* SMELL: Should have a default pixel size etc. */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 20px;}
-a:focus, a:hover {color:#000;}
-a {color:#009;text-decoration:underline;}
+a:focus, a:hover {color:#009;text-decoration:underline;}
+a {color:#009;text-decoration:none;}
 blockquote {margin:20px;color:#666;font-style:italic;}
 strong {font-weight:bold;}
 em, dfn {font-style:italic;}
@@ -204,6 +204,10 @@ hr.half-space { margin-bottom:9px;}
 .push-23 {margin:0 -920px 20px 920px;}
 .push-24 {margin:0 -960px 20px 960px;}
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float:right;position:relative;}
+/* gutters */
+.no-gutter {margin-right:0;}
+.fill-gutter {padding-right:10px;margin-right:0;}
+.steal-gutter {padding-left:10px;}
 /* tops and bottoms */
 /* TODO: Replace with 'space-t-1', 'space-b-4'? */
 .top-0 {margin-top:0;}
@@ -257,10 +261,6 @@ hr.half-space { margin-bottom:9px;}
 .pad-box-4 {padding-left:40px;padding-right:40px;padding-top:40px;}
 .pad-box-5 {padding-left:50px;padding-right:50px;padding-top:50px;}
 .pad-box-6 {padding-left:60px;padding-right:60px;padding-top:60px;}
-/* gutters */
-.no-gutter {margin-right:0;}
-.fill-gutter {padding-right:10px;margin-right:0;}
-.steal-gutter {padding-left:10px;}
 /* boxes */
 /* TODO: Remove these deprecated classes. (see pad-box-#) */
 .tight-box {padding:10px 10px 0 10px;}
