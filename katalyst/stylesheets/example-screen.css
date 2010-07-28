@@ -4,6 +4,8 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {color:#fff;text-transform:uppercase;}
 h4, .h4 {border-bottom:1px solid #fff;line-height:20px;margin-bottom:19px;}
 /* WIDGETS ***************************************************************************** WIDGETS */
+.members-side-panel {background:#ed1c24 url(../images/members-side-panel-bg.png) top left repeat;height:280px;}
+.members-side-box {padding:20px 20px 0 10px;}
 .inverted {color:#fff;}
 .small {font-size:10px;line-height:15px;}
 .small h3, .small .h3 .small p {margin-bottom:10px;}
@@ -28,5 +30,3 @@ h4, .h4 {border-bottom:1px solid #fff;line-height:20px;margin-bottom:19px;}
   -webkit-border-top-right-radius:10px;
   -moz-border-radius-topright:10px;
 }
-.members-side-panel {background:#ed1c24 url(../images/members-side-panel-bg.png) top left repeat;height:280px;}
-.members-side-box {padding:20px 20px 0 10px;}

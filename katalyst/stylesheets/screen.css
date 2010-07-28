@@ -267,11 +267,13 @@ hr.half-space { margin-bottom:9px;}
 .box {padding:20px 20px 0 20px;}
 /* .formtastic */
 /* Blueprint is labels above inputs by default. */
+.formtastic abbr {border-bottom:none;}
 .formtastic legend {font-size:14px;line-height:20px;padding-bottom:20px;}
 .formtastic fieldset fieldset legend {font-size:100%;line-height:inherit;padding-bottom:0;}
 .formtastic ol {list-style-type:none;margin-right:0;padding:0;}
 .formtastic li {margin-bottom:10px;}
 .formtastic label {display:block;}
+.formtastic label abbr[title='required'] {border-bottom:none;}
 .formtastic li li {float:left;margin-bottom:0;margin-right:10px;}
 /* .buttons */
 .buttons li {float:left;margin-bottom:20px;margin-right:10px;}
