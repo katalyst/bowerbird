@@ -278,12 +278,15 @@ hr.half-space { margin-bottom:4px;}
 .button, .icon-button, .sprite-button {background-position:left top;background-repeat:no-repeat;}
 .button:hover, .icon-button:hover, .sprite-button:hover {background-position:left bottom;}
 .icon-button {padding-left:1em;}
-.sprite-button {display:-moz-inline-box;display:inline-block;text-align:left;text-indent:-9999px;}
+.sprite-button {display:block;text-align:left;text-indent:-9999px;}
 /* borders */
 .border, .border-t {border-top: 1px solid #eee;}
 .border, .border-b {border-bottom: 1px solid #eee;}
 .border, .border-l {border-left: 1px solid #eee;}
 .border, .border-r {border-right: 1px solid #eee;}
+/* errors & alerts */
+.alert,
+.error {border-color:#900;color:#900;}
 /* rounding */
 .round, .round-b, .round-l, .round-bl {border-bottom-left-radius:3px;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;}
 .round, .round-b, .round-r, .round-br {border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;}

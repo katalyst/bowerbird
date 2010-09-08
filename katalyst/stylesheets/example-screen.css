@@ -2,9 +2,13 @@
 body{font-size:11px;}
 body.alt{background:#000;color:#CCC;}
 /* ELEMENTS *************************************************************************** ELEMENTS */
+a:hover, a:focus {color:#fff;}
+a {color:#f99;}
 /* HEADINGS *************************************************************************** HEADINGS */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{color:#fff;text-transform:uppercase;}
 h4, .h4{border-bottom:1px solid #fff;line-height:20px;margin-bottom:19px;}
+/* BLUEPRINT EXTENSIONS *************************************************** BLUEPRINT EXTENSIONS */
+.pad-1-e236 {padding-top:236px;}
 /* DEFAULT ***************************************************************************** DEFAULT */
 .inverted{color:#fff;}
 .members-side-panel{background:#ed1c24 url(../images/members-side-panel-bg.png) top left repeat;height:280px;}
