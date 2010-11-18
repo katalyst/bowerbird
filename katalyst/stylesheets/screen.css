@@ -1,15 +1,12 @@
-/* -----------------------------------------------------------------------
+/*
 
+Katalyst's Blueprint CSS Framework
+http://github.com/katalyst/blueprint-css
 
- Blueprint CSS Framework 0.9
- http://blueprintcss.org
+Based on Blueprint CSS Framework 0.9
+http://blueprintcss.org/
 
-   * Copyright (c) 2007-Present. See LICENSE for more info.
-   * See README for instructions on how to use Blueprint.
-   * For credits and origins, see AUTHORS.
-   * This is a compressed file. See the sources in the 'src' directory.
-
------------------------------------------------------------------------ */
+*/
 
 /* RESET ********************************************************************************* RESET */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
@@ -70,9 +67,13 @@ hr.half-space { margin-bottom:4px;}
 .wrap {overflow:auto;width:100%;} /* alternative for clearfix */
 .left {float:left;}
 .right {float:right;}
-.align-center {text-align:center;}
+.nowrap {white-space:nowrap;}
 .align-left {text-align:left;}
+.align-center {text-align:center;}
 .align-right {text-align:right;}
+.align-top {vertical-align:top;}
+.align-middle {vertical-align:middle;}
+.align-bottom {vertical-align:bottom;}
 /* GRID *********************************************************************************** GRID */
 .container {display:block;width:950px;margin:0 auto;}
 .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
@@ -292,6 +293,9 @@ hr.half-space { margin-bottom:4px;}
 .round, .round-b, .round-r, .round-br {border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;}
 .round, .round-t, .round-l, .round-tl {border-top-left-radius:3px;-moz-border-radius-topleft:3px;-webkit-border-top-left-radius:3px;}
 .round, .round-t, .round-r, .round-tr {border-top-right-radius:3px;-moz-border-radius-topright:3px;-webkit-border-top-right-radius:3px;}
+/* formatting */
+.uppercase {text-transform:uppercase;}
+.lowercase {text-transform:lowercase;}
 /* FORMTASTIC *********************************************************************** FORMTASTIC */
 /* Blueprint is labels above inputs by default. */
 .formtastic abbr {border-bottom:none;}
