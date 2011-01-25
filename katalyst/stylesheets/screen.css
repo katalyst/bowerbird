@@ -279,6 +279,9 @@ hr.half-space { margin-bottom:4px;}
 .unmarked-list {list-style-type:none;margin-right:0;padding-left:0;}
 .floated-list li {float:left;}
 .inline-list li {display:inline;}
+ol li.last-item,
+ul li.last-item,
+dl li.last-item {margin-left:0;margin-right:0;}
 /* buttons */
 .button, .icon-button, .sprite-button {background-position:left top;background-repeat:no-repeat;}
 .button:hover, .icon-button:hover, .sprite-button:hover {background-position:left bottom;}
