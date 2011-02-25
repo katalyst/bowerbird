@@ -62,11 +62,14 @@ input::-moz-focus-inner{border:0;}
 button::-moz-focus-inner{border:0;}
 input[type='text'],
 input[type='password'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
 textarea {border:1px solid #CCC;padding:2px 3px;}
-textarea {font:inherit;width:100%;}
+textarea {font:inherit;}
 /* UTILS ********************************************************************************* UTILS */
 hr.space, hr.half-space {background:#fff;color:#fff;visibility:hidden;}
-hr.half-space { margin-bottom:4px;}
+hr.half-space {margin-bottom:4px;}
 .clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix {display:block;}
 .clear {clear:both;}
