@@ -186,9 +186,15 @@ dl li.last-item {margin-left:0;margin-right:0;}
 .border, .border-b {border-bottom:1px solid #eee;}
 .border, .border-l {border-left:1px solid #eee;}
 .border, .border-r {border-right:1px solid #eee;}
-/* errors & alerts */
+/* messages */
 .alert,
 .error {border-color:#900;color:#900;}
+.notice {border-color:#f90;color:#f90;}
+.success {border-color:#090;color:#090;}
+.bg-alert,
+.bg-error {background:#fcc;}
+.bg-notice {background:#ffc;}
+.bg-success {background:#cfc;}
 /* rounding */
 .round, .round-b, .round-l, .round-bl {border-bottom-left-radius:3px;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;}
 .round, .round-b, .round-r, .round-br {border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;}
