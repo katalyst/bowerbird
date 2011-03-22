@@ -201,6 +201,18 @@ dl li.last-item {margin-left:0;margin-right:0;}
 .bg-error {background:#fcc;}
 .bg-notice {background:#ffc;}
 .bg-success {background:#cfc;}
+.alert-link:focus,
+.alert-link:hover,
+.error-link:focus,
+.error-link:hover {color:#900;text-decoration:none;}
+.alert-link,
+.error-link {color:#900;text-decoration:underline;}
+.notice-link:focus,
+.notice-link:hover {color:#f90;text-decoration:none;}
+.notice-link {color:#f90;text-decoration:underline;}
+.success-link:focus,
+.success-link:hover {color:#090;text-decoration:none;}
+.success-link {color:#090;text-decoration:underline;}
 /* rounding */
 .round, .round-b, .round-l, .round-bl {border-bottom-left-radius:3px;-moz-border-radius-bottomleft:3px;-webkit-border-bottom-left-radius:3px;}
 .round, .round-b, .round-r, .round-br {border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px;-webkit-border-bottom-right-radius:3px;}

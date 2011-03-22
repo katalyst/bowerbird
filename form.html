@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>forms</title>
+    <title>Bowerbird - Forms</title>
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen,projection" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" charset="utf-8" />
     <!--[if lt IE 8]><link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen,projection" charset="utf-8" /><![endif]-->
@@ -16,10 +16,10 @@
         <p class="border success pad-1 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p class="border notice pad-1 bg-notice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="border error pad-box-1 bg-error space-b-1">
-          <h3>2 Errors</h3>
+          <p>The following problems were encountered:</p>
           <ul>
-            <li>Name can't be blank</li>
-            <li>Key can't be blank</li>
+            <li><a href="#setting_name" class="error-link">Name can't be blank.</a></li>
+            <li><a href="#setting_name" class="error-link">Key can't be blank.</a></li>
           </ul>
         </div>
         <form>
@@ -110,7 +110,7 @@
                 <li>
                   <label class="h6" for="setting_name"><abbr title="required">*</abbr> Name</label>
                   <input class="string required" id="setting_name" maxlength="255" name="setting[name]" required="required" type="text" value="" />
-                  <p class="error">can't be blank</p>
+                  <p class="error">Name can't be blank.</p>
                 </li>
                 <li>
                   <h6>options</h6>
