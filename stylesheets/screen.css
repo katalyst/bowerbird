@@ -188,10 +188,10 @@ dl li.last-item {margin-left:0;margin-right:0;}
 .border, .border-l {border-left:1px solid #eee;}
 .border, .border-r {border-right:1px solid #eee;}
 /* backgrounds & colors */
+.bg-black {background-color:#000;}
+.bg-white {background-color:#fff;}
 .color-black {color:#000;}
 .color-white {color:#fff;}
-.bg-black {background:#000;}
-.bg-white {background:#fff;}
 /* messages */
 .alert,
 .error {border-color:#900;color:#900;}
