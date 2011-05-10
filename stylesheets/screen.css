@@ -171,6 +171,7 @@ ol li.last-item,
 ul li.last-item,
 dl li.last-item {margin-left:0;margin-right:0;}
 /* buttons */
+/* TODO: Drop the .button class? */
 .button,
 .icon-button,
 .sprite-button {background-position:left top;background-repeat:no-repeat;}
