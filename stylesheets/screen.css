@@ -171,6 +171,16 @@ ol li.last-item,
 ul li.last-item,
 dl li.last-item {margin-left:0;margin-right:0;}
 /* buttons */
+/* TODO: Make both icon-button and sprite-button dispaly as inline-block (or make new class for that and deprecate icon-button and sprite-button): */
+/*
+{
+display: -moz-inline-stack;
+display: inline-block;
+vertical-align: top;
+zoom: 1;
+*display: inline;
+}
+*/
 /* TODO: Drop the .button class? */
 .button,
 .icon-button,
