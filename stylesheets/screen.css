@@ -72,6 +72,8 @@ hr.half-space {margin-bottom:4px;}
 .wrap {overflow:auto;width:100%;} /* alternative for clearfix */
 .left {float:left;}
 .right {float:right;}
+.block {display:block;}
+.inline {display:inline;}
 /* GRID ************************************************************************************ GRID */
 .container {display:block;width:950px;margin:0 auto;}
 .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
