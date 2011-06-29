@@ -12,158 +12,159 @@
       <div class="span-24 last-col border-b space-t-1 space-b-2">
         <h1 class="h4"><a href="index.html">Bowerbird</a> &ndash; Forms</h1>
       </div>
-      <div class="top-2 prepend-6 span-12 append-6 last-col">
-        <p class="border error pad-1 bg-error">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="border success pad-1 bg-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p class="border notice pad-1 bg-notice">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="border error pad-box-1 bg-error space-b-1">
+      <div class="top-2 span-24 last-col">
+        <p class="border color-error pad-1 bg-error">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <a href="#">sed do eiusmod tempor</a> incididunt ut labore et dolore magna aliqua.</p>
+        <p class="border color-success pad-1 bg-success">Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="border color-notice pad-1 bg-notice">Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="border color-error pad-box-1 bg-error space-b-1">
           <p>The following problems were encountered:</p>
           <ul>
-            <li><a href="#setting_name" class="error-link">Name can't be blank.</a></li>
-            <li><a href="#setting_name" class="error-link">Key can't be blank.</a></li>
+            <li><a href="#setting_name">Name can't be blank.</a></li>
+            <li><a href="#setting_name">Key can't be blank.</a></li>
           </ul>
         </div>
+      </div>
+      <div class="span-12">
         <form>
-          <div class="span-6">
-            <fieldset>
-              <h3>Fieldset</h3>
-              <ol class="unmarked-list spaced-b-list">
-                <li>
-                  <label class="h6">Label</label>
-                  <input type="text" />
-                </li>
-                <li>
-                  <label class="h6">Label</label>
-                  <input type="text" />
-                  <div class="small">
-                    <p>This is an example hint. This is an example an example hint. This is an example an example hint an example hint.</p>
-                    <p>This is an example hint.</p>
-                    <ol>
-                      <li>asdgas</li>
-                      <li>asdgas</li>
-                      <li>asdgas</li>
-                      <li>asdgas</li>
-                    </ol>
-                  </div>
-                </li>
-                <li>
-                  <label class="h6">Label</label>
-                  <select>
-                    <option>sdagasgd</option>
-                    <option>sdagasgd</option>
-                    <option>sdagasgd</option>
-                    <option>sdagasgd</option>
-                    <option>sdagasgd</option>
-                  </select>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" />
-                    Checkbox A
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" />
-                    Checkbox B
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" />
-                    Checkbox C
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="checkbox" />
-                    Checkbox D
-                  </label>
-                </li>
-                <li>
-                  <label class="h6">Radio Boolean</label>
-                  <ul class="unmarked-list floated-l-list spaced-r-list">
-                    <li>
-                      <label>
-                        <input type="radio">
-                        Yes
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="radio">
-                        No
-                      </label>
-                    </li>
-                  </ul>
-                </li>
-              </ol>
-            </fieldset>
-          </div>
-          <div class="span-6 last-col">
-            <fieldset>
-              <h3>Fieldset</h3>
-              <ol class="unmarked-list spaced-b-list">
-                <li>
-                  <label class="h6">Label</label>
-                  <input type="text" />
-                </li>
-                <li>
-                  <label class="h6" for="setting_name"><abbr title="required">*</abbr> Name</label>
-                  <input class="string required" id="setting_name" maxlength="255" name="setting[name]" required="required" type="text" value="" />
-                  <p class="error">Name can't be blank.</p>
-                </li>
-                <li>
-                  <h6>options</h6>
-                  <ol class="unmarked-list">
-                    <li>
-                      <label>
-                        <input type="checkbox" />
-                        Label
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" />
-                        Label
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="checkbox" />
-                        Label
-                      </label>
-                    </li>
+          <fieldset>
+            <h3>Fieldset</h3>
+            <ol class="unmarked-list spaced-b-list">
+              <li>
+                <label class="h6">Text</label>
+                <input type="text" />
+              </li>
+              <li>
+                <label class="h6">Password</label>
+                <input type="password" />
+              </li>
+              <li>
+                <label class="h6">Text with Hint</label>
+                <input type="text" />
+                <div class="small">
+                  <p>This is an example hint. This is an example an example hint. This is an example an example hint an example hint.</p>
+                  <p>This is an example hint.</p>
+                  <ol>
+                    <li>asdgas</li>
+                    <li>asdgas</li>
+                    <li>asdgas</li>
+                    <li>asdgas</li>
                   </ol>
-                </li>
-                <li>
-                  <h6>options</h6>
-                  <ol class="unmarked-list">
-                    <li>
-                      <label>
-                        <input type="radio" />
-                        Label
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="radio" />
-                        Label
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <input type="radio" />
-                        Label
-                      </label>
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </fieldset>
-          </div>
-          <hr />
-          <div class="span-12 last-col">
+                </div>
+              </li>
+              <li>
+                <label class="h6">Select</label>
+                <select>
+                  <option>sdagasgd</option>
+                  <option>sdagasgd</option>
+                  <option>sdagasgd</option>
+                  <option>sdagasgd</option>
+                  <option>sdagasgd</option>
+                </select>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Checkbox A
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Checkbox B
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Checkbox C
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" />
+                  Checkbox D
+                </label>
+              </li>
+              <li>
+                <label class="h6">Radio Boolean</label>
+                <ul class="unmarked-list floated-l-list spaced-r-list">
+                  <li>
+                    <label>
+                      <input type="radio">
+                      Yes
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio">
+                      No
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </fieldset>
+          <fieldset>
+            <h3>Fieldset</h3>
+            <ol class="unmarked-list spaced-b-list">
+              <li>
+                <label class="h6">Optional Field <small><em>(optional)</em></small></label>
+                <input type="text" />
+              </li>
+              <li>
+                <label class="h6" for="setting_name"><abbr title="required">*</abbr> Required Field</label>
+                <input class="string required" id="setting_name" maxlength="255" name="setting[name]" required="required" type="text" value="" />
+                <p class="color-error">Name can't be blank.</p>
+              </li>
+              <li>
+                <h6>Checkboxes</h6>
+                <ol class="unmarked-list">
+                  <li>
+                    <label>
+                      <input type="checkbox" />
+                      Label
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" />
+                      Label
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" />
+                      Label
+                    </label>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h6>Radio Buttons</h6>
+                <ol class="unmarked-list">
+                  <li>
+                    <label>
+                      <input type="radio" />
+                      Label
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" />
+                      Label
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="radio" />
+                      Label
+                    </label>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </fieldset>
+          <fieldset>
             <ol class="unmarked-list">
               <li>
                 <label class="h6" for="file">Image Widget</label>
@@ -172,19 +173,19 @@
                   <ol class="left unmarked-list">
                     <li>
                       <label>
-                        <input type="radio" />
+                        <input type="radio" name="image" />
                         Keep this Image
                       </label>
                     </li>
                     <li>
                       <label>
-                        <input type="radio" />
+                        <input type="radio" name="image" />
                         Delete this Image
                       </label>
                     </li>
                     <li>
                       <label>
-                        <input type="radio" />
+                        <input type="radio" name="image" />
                         Upload a New Image
                       </label>
                       <hr class="space" />
@@ -194,18 +195,97 @@
                 </div>
               </li>
               <li>
-                <label class="h6">Textarea</label>
-                <textarea style="width:100%;"></textarea>
+                <h6>Repeatable Input</h6>
+                <ol class="unmarked-list spaced-b-list">
+                  <li class="clearfix">
+                    <div class="column span-half no-gutter">
+                      <input type="text" />
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="column span-half no-gutter">
+                      <input type="text" />
+                    </div>
+                    <div class="column span-half no-gutter">
+                      <a class="small" href="#">Delete</a>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="column span-half no-gutter">
+                      <input type="text" />
+                    </div>
+                    <div class="column span-half no-gutter">
+                      <a class="small" href="#">Delete</a>
+                    </div>
+                  </li>
+                </ol>
+                <p>
+                  <a href="#">Add Another Input</a>
+                </p>
               </li>
             </ol>
-          </div>
-          <div class="span-12 last-col">
-            <ol class="unmarked-list floated-r-list spaced-l-list">
-              <li><input type="submit" /></li>
-              <li><a href="#">cancel</a></li>
-            </ol>
-          </div>
+          </fieldset>
+          <ol class="unmarked-list floated-l-list spaced-r-list">
+            <li><input type="submit" /></li>
+            <li><a href="#">cancel</a></li>
+          </ol>
         </form>
+      </div>
+      <div class="span-12 last-col">
+        <form>
+          <fieldset>
+            <h3>Textareas</h3>
+            <ol class="unmarked-list spaced-b-list">
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea>This is a generic TEXTAREA.</textarea>
+              </li>
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea class="reach-20">This TEXTAREA has a .reach-20 class.</textarea>
+              </li>
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea class="reach-40">This TEXTAREA has a .reach-40 class.</textarea>
+              </li>
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea class="reach-10 span-quarter">This TEXTAREA has a .reach-10 and .span-quarter class.</textarea>
+              </li>
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea class="reach-10 span-third">This TEXTAREA has a .reach-10 and .span-third class.</textarea>
+              </li>
+              <li>
+                <label class="h6">Textarea</label>
+                <textarea class="reach-10 span-half">This TEXTAREA has a .reach-10 and .span-half class.</textarea>
+              </li>
+              <li>
+                <div class="column no-gutter span-half">
+                  <label class="h6">Textarea A</label>
+                  <textarea class="reach-20">This TEXTAREA has a .reach-20 class and is inside a DIV that has a .span-half class.</textarea>
+                </div>
+                <div class="column no-gutter span-quarter">
+                  <label class="h6">Textarea B</label>
+                  <textarea class="reach-20">This TEXTAREA has a .reach-20 class and is inside a DIV that has a .span-quarter class.</textarea>
+                </div>
+                <div class="column no-gutter span-quarter">
+                  <label class="h6">Textarea C</label>
+                  <textarea class="reach-20">This TEXTAREA has a .reach-20 class and is inside a DIV that has a .span-quarter class.</textarea>
+                </div>
+              </li>
+            </ol>
+          </fieldset>
+          <ol class="unmarked-list floated-l-list spaced-r-list">
+            <li><input type="submit" /></li>
+            <li><a href="#">cancel</a></li>
+          </ol>
+        </form>
+      </div>
+      <div class="span-24 last-col border-t space-t-2 pad-t-1 small">
+        <div class="span-24 last-col">
+          <p class="align-right">&copy; <a href="http://katalyst.com.au/">Katalyst Interactive</a> 2011</p>
+        </div>
       </div>
     </div>
   </body>
