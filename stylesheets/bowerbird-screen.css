@@ -366,12 +366,9 @@ dl li.last-item {margin-left:0;margin-right:0;}
 .deprecations .success,
 .deprecations .button,
 .deprecations .icon-button,
-.deprecations .sprite-button,
 .deprecations .button:hover,
 .deprecations .icon-button:hover,
-.deprecations .sprite-button:hover,
-.deprecations .icon-button,
-.deprecations .sprite-button {border:2px solid #f0f !important;}
+.deprecations .icon-button {border:2px solid #f0f !important;}
 /* * * * * * * */
 
 /*a, a:link, a:visited {color:#000;}
