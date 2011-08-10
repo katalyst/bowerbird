@@ -19,13 +19,12 @@ a img {border:none;}
 /* ELEMENTS **************************************************************************** ELEMENTS */
 html {font-size:100.01%;}
 body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {display:block;font-weight:normal;}
-h1, .h1 {font-size:36px;line-height:40px;margin-bottom:10px;}
-h2, .h2 {font-size:24px;line-height:40px;margin-bottom:10px;}
-h3, .h3 {font-size:18px;line-height:20px;margin-bottom:10px;}
-h4, .h4 {font-size:14px;line-height:20px;margin-bottom:10px;}
-h5, .h5 {font-size:12px;font-weight:bold;margin-bottom:10px;}
-h6, .h6 {font-size:12px;font-weight:bold;}
+h1, .h1 {font-size:36px;font-weight:normal;line-height:40px;margin-bottom:10px;}
+h2, .h2 {font-size:24px;font-weight:normal;line-height:40px;margin-bottom:10px;}
+h3, .h3 {font-size:18px;font-weight:normal;line-height:20px;margin-bottom:10px;}
+h4, .h4 {font-size:14px;font-weight:normal;line-height:20px;margin-bottom:10px;}
+h5, .h5 {font-size:12px;font-weight:bold;line-height:20px;margin-bottom:10px;}
+h6, .h6 {font-size:12px;font-weight:bold;line-height:20px;margin-bottom:0;}
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
 p {margin:0 0 10px;}
 a:focus, a:hover {color:#009;text-decoration:underline;}
