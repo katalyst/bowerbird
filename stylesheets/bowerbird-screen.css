@@ -231,6 +231,19 @@ dl li.last-item {margin-left:0;margin-right:0;}
 .lh-3 {line-height:30px;}
 .lh-4 {line-height:40px;}
 .lh-5 {line-height:50px;}
+/* width & heights */
+.w-half {width:5px;}
+.w-1 {width:10px;}
+.w-2 {width:20px;}
+.w-3 {width:30px;}
+.w-4 {width:40px;}
+.w-5 {width:50px;}
+.h-half {height:5px;}
+.h-1 {height:10px;}
+.h-2 {height:20px;}
+.h-3 {height:30px;}
+.h-4 {height:40px;}
+.h-5 {height:50px;}
 /* sprites */
 .sprite {background-position:top left;background-repeat:no-repeat;}
 .sprite-button:hover {background-position:bottom left;}
