@@ -224,6 +224,13 @@ input.reach-100, textarea.reach-100 {height:920px;}
 ol li.last-item,
 ul li.last-item,
 dl li.last-item {margin-left:0;margin-right:0;}
+/* line heights */
+.lh-half {line-height:5px;}
+.lh-1 {line-height:10px;}
+.lh-2 {line-height:20px;}
+.lh-3 {line-height:30px;}
+.lh-4 {line-height:40px;}
+.lh-5 {line-height:50px;}
 /* sprites */
 .sprite {background-position:top left;background-repeat:no-repeat;}
 .sprite-button:hover {background-position:bottom left;}
