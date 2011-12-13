@@ -218,6 +218,7 @@ input.reach-100, textarea.reach-100 {height:920px;}
 .floated-l-list > li {float:left;}
 .floated-r-list > li {float:right;}
 .inline-list > li {display:inline;}
+.inline-block-list > li {display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;}
 .spaced-b-list > li {margin-bottom:10px;}
 .spaced-l-list > li {margin-left:10px;}
 .spaced-r-list > li {margin-right:10px;}
